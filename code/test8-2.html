@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test8-2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .layout {
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        span:hover {
+            box-shadow: 0 5px 10px #999;
+            /*box-shadow: 投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色;*/
+        }
+
+        span {
+            border: 1px transparent solid;
+            border-radius: 3px;
+            padding: 8px;
+            margin: 2px;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+        }
+
+        .card1 {
+            background-color: #009688;
+        }
+
+        .card2 {
+            background-color: #ffeb3b;
+        }
+
+        .card3 {
+            background-color: #ff9800;
+        }
+
+        .card2 a,
+        .card3 a {
+            color: #000;
+            /*a标签的color无法从父级继承，因为浏览器默认样式会覆盖，详见https://www.zhihu.com/question/28370313*/
+        }
+
+        .card4 {
+            background-color: #f44336;
+        }
+
+        .card5 {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <span class="card1">
+            <a href="">steal</a>
+        </span>
+        <span class="card2">
+            <a href="">yellow</a>
+        </span>
+        <span class="card3">
+            <a href="">orange</a>
+        </span>
+        <span class="card4">
+            <a href="">red</a>
+        </span>
+        <span class="card5">
+            <a href="">green</a>
+        </span>
+    </div>
+</body>
+
+</html>
