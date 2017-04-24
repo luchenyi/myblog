@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test10-3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .layout {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 600px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); /*相对于原位置向左向上移动自身50%空间位置*/
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .h-card{
+            position: fixed;  /*设置固定灰色背景，相对于浏览器绝对定位*/
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .head,
+        .foot {
+            color: #fff;
+            background-color: #009688;
+            padding: 1px 16px;
+        }
+
+        .head span {
+            float: right;
+            margin-top: 16px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+        <h1>这是页面内容</h1>
+
+        <div class="h-card">
+            <div class="container">
+                <div class="head">
+                    <span>×</span>
+                    <h3>头部</h3>
+                </div>
+                <div class="content">
+                    <p>这是内容</p>
+                    <p>这是内容</p>
+                </div>
+                <div class="foot">
+                    <p>尾部</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

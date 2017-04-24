@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test10-2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .layout {
+            width: 600px;
+            margin: 0 auto;
+            padding: 0px;
+            box-shadow: 0 6px 10px #999;
+            margin-top: 30px;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .t1 {
+            background-color: #009688;
+            padding: 1px 16px;
+        }
+
+        .t1>h3 {
+            background-color: #009688;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: #fff;
+            margin: 10px 1px;
+        }
+
+        .container {
+            padding: 16px;
+            color: #808080;
+        }
+         
+        .text input[type="text"],
+        .text textarea {           
+            padding: 8px 0; /*表单中的文字上移，多行文本输入框的移动条也能显示。*/ 
+            width: 100%;
+            border: none;
+            border-bottom: 1px #808080 solid;
+            margin: 16px 0;
+        }
+        .text input[type="text"]:focus, /*选中状态消失外边框*/
+        .text textarea:focus {
+            outline: none;
+        }
+        .food {
+            width: 50%;
+            float: left;
+        }
+
+        .sex {
+            width: 50%;
+            float: left;
+        }
+
+        button {
+            background-color: #009688;
+            padding: 8px 16px;
+            margin: 16px 0;
+            color: #fff;
+            border: 1px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="t1">
+            <h3>信息收集表</h3>
+        </div>
+        <div class="container">
+            <form action="" method="post">
+                <div class="text">
+                    <label for="name">姓名</label>
+                    <input type="text" name="name" id="name">   
+                    <label for="qq">QQ</label>
+                    <input type="text" name="QQnumber" id="qq">
+                    <label for="words">要说的话</label>
+                    <textarea name="words" id="words" rows="4" cols="50"></textarea>
+                  </div>
+                <div class="clearfix">
+                    <div class="food">
+                        <div>
+                            <input type="checkbox" name="food" value="Milk" checked="checked"> Milk   
+                        </div>
+                        <div>
+                            <input type="checkbox" name="food" value="Sugar"> Sugar
+                        </div>
+                        <div>
+                            <input type="checkbox" name="food" value="Lemon"> Lemon
+                        </div>
+                    </div>
+                    <div class="sex">
+                        <div>
+                            <input type="radio" name="sex" value="Male" checked="checked"> Male
+                        </div>
+                        <div>
+                            <input type="radio" name="sex" value="Female"> Female
+                        </div>
+                    </div>
+                </div>
+                <button type="submint">提交</button>
+            </form>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
