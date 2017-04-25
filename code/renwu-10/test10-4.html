@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test10-4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .layout {
+            width: 600px;
+            margin: 0 auto;         
+        }
+        .nav {
+            background-color: #f1f1f1;
+            color: #000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.13), 0 3px 10px rgba(0, 0, 0, 0.15);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .nav>li{
+            position: relative;
+            float: left;
+        }  
+        .nav>li a:hover{
+            background-color: #bbb;
+        }  
+        .nav a{
+            text-decoration: none;
+            padding: 8px 16px;
+            color: #000;
+            display: block;
+        }
+        .more{
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.13), 0 3px 10px rgba(0, 0, 0, 0.15);
+            min-width: 160px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+        .nav>li:hover .more{
+            display: block;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">更多</a>
+                <div class="more">
+                    <a href="https://github.com/weite122">Github</a>
+                    <a href="https://github.com/weite122/myblog/issues">博客</a>
+                    <a href="#">知乎</a>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+</body>
+
+</html>
+
+
