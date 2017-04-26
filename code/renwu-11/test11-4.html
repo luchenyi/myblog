@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>圣杯布局</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .layout{
+            padding-left: 100px;
+            padding-right: 150px;
+        }
+        .layout:after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        .aside,.main,.menu{
+            float: left;
+        }
+        .menu{
+            margin-left: -100%;
+            width: 100px;
+            height: 300px;
+            background-color: #dae242;
+            position: relative;
+            left: -100px;
+        }
+        .aside{
+            width: 150px;
+            height: 300px;
+            background-color: #e45353;
+            margin-left: -150px;
+            position: relative;
+            left: 150px;
+        }
+        .main{
+            height: 350px;
+            background-color: #414141;
+            width: 100%;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="layout">
+          <div class="main">
+            当页面不断缩小，直至menu的宽度大于
+        </div>
+        <div class="menu">
+            menu
+        </div>
+        <div class="aside">
+            aside
+        </div>
+      
+    </div>
+    </body>
+</html>

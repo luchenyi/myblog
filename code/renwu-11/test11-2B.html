@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>双栏布局2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .layout{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .layout:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .aside{
+            width: 200px;
+            height: 400px;
+            float: right;
+            background-color: #d33fea;
+        }
+        .main{
+            height: 400px;
+            margin-right: 200px;
+            background-color: #f34533;
+        }
+        .foot{
+            background-color: #dedced;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="layout">
+        <div class="aside">
+            aside
+        </div>
+        <div class="main">
+            main
+        </div>
+        <div class="foot">
+            foot
+        </div>
+    </div>
+    </body>
+</html>

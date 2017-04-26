@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>风景如画</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .layout {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .ct:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .layout h1 {
+            text-align: center;
+            color: #666;
+            border-bottom: 1px #ccc solid;
+            padding-bottom: 10px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            /*ul与div之间还有padding需要消除，必须使用','*/
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            margin-left: -10px;
+        }
+        .paint {
+            float: left;
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+
+        .ct li {
+            width: 260px;
+            display: inline-block;
+            box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 12px rgba(0, 0, 0, 0.19);
+        }
+
+        .paint img {
+            width: 100%;
+            opacity: 0.75;
+        }
+        .view{
+            padding: 16px; /*换成p标签不用设置上下padding*/
+            text-align: center;
+        }
+        .view span{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+
+        <h1>风景列表</h1>
+
+        <div class="ct">
+            <ul>
+                <li class="paint">
+                    <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="图片">
+                    <div class="view">
+                        <span>风景如画</span>
+                    </div>
+                </li>
+                <li class="paint">
+                    <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="图片">
+                    <div class="view">
+                        <span>风景如画</span>
+                    </div>
+                </li>
+                <li class="paint">
+                    <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="图片">
+                    <div class="view">
+                        <span>风景如画</span>
+                    </div>
+                </li>
+                <li class="paint">
+                    <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="图片">
+                    <div class="view">
+                        <span>风景如画</span>
+                    </div>
+                </li>
+                <li class="paint">
+                    <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="图片">
+                    <div class="view">
+                        <span>风景如画</span>
+                    </div>
+                </li>
+                <li class="paint">
+                    <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="图片">
+                    <div class="view">
+                        <span>风景如画</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

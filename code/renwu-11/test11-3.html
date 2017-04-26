@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>三栏布局</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .layout{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .layout:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .menu{
+            width: 200px;
+            height: 400px;
+            float: left;
+            background-color: #dae242;
+        }
+        .aside{
+            width: 300px;
+            height: 400px;
+            float: right;
+            background-color: #e45353;
+        }
+        .main{
+            height: 400px;
+            margin-left: 200px;
+            margin-right: 300px;
+            background-color: #f24089;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="layout">
+        <div class="menu">
+            menu
+        </div>
+        <div class="aside">
+            aside
+        </div>
+        <div class="main">
+            两列定宽三栏布局
+        </div>
+    </div>
+    </body>
+</html>

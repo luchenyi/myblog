@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>单栏布局2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .layout{
+            width: 960px;
+            margin: 0 auto;
+        }
+        body{
+            min-width: 960px;
+        }
+            
+        #head{
+            height: 100px;
+            background-color: #f8f938;
+        }
+         #content{
+             height: 360px;
+             background-color: #934534;
+             text-align: center;
+         }
+         #foot{
+             height: 100px;
+             background-color: #d9d9e8;
+         }
+        </style>
+    </head>
+    <body>
+   
+        <div id="head">
+            <div class="layout">head</div>
+        </div>
+        <div id="content" class="layout">
+            在页面宽度小于960px时，滚动条滑倒最右端，上下通知栏由于没有设置宽度，会自动缩放，导致宽度小于960px，设置body{min-width：960px},通知栏的宽度始终不低于960px，不会出现以上情况。
+        </div>
+        <div id="foot">
+            <div class="layout">foot</div>
+        </div>
+    
+    </body>
+</html>

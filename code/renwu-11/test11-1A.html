@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>单栏布局1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .layout{
+            /*max-width：960px;*/
+            width: 960px;
+            margin: 0 auto;
+        }
+        #head{
+            height: 100px;
+            background-color: #f8f938;
+        }
+         #content{
+             height: 360px;
+             background-color: #934534;
+             text-align: center;
+             line-height: 360px;
+
+         }
+         #foot{
+             height: 100px;
+             background-color: #d9d9e8;
+         }
+        </style>
+    </head>
+    <body>
+        <div id="head" class="layout">
+            head
+        </div>
+        <div id="content" class="layout">
+            max-width：960px与width: 960px的区别主要是当屏幕宽度小于layout设置的宽度，下方不会显示滚动条，自动缩放。
+        </div>
+        <div id="foot" class="layout">
+            foot
+        </div>
+    </body>
+</html>

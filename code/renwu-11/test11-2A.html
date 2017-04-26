@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>双栏布局1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .layout{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .layout:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .aside{
+            width: 200px;
+            height: 400px;
+            float: left;
+            background-color: #d33fea;
+        }
+        .main{
+            height: 400px;
+            margin-left: 200px;
+            background-color: #f34533;
+        }
+        .foot{
+            background-color: #dedced;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="layout">
+        <div class="aside">
+            aside
+        </div>
+        <div class="main">
+            注意浏览器渲染的方式，浏览器从上至下依次渲染，首先渲染aside使它左浮动，然后再渲染main，如果顺序颠倒，
+            先渲染main占据整行空间，再使aside左浮动，两者最终呈现的结果就不在一行。
+        </div>
+        <div class="foot">
+            foot
+        </div>
+    </div>
+    </body>
+</html>
