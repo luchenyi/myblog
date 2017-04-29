@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>weite122项目</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #fff2e3;
+            text-align: center;
+            font-size: 14px;
+            color: #87968e;  /*重置一些默认样式，后面不用重复声明，简化代码*/
+        }
+
+        .layout {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .items:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .layout h1 {
+            margin-top: 30px;
+            font-size: 42px;
+        }
+
+        .layout>p {
+            color: #bbb;
+        }
+
+        .items {
+            margin: 40px 0;
+            padding: 0;
+        }
+
+        .items li {
+            display: inline-block; /*省去list-style和float*/
+        }
+
+        .btn {
+            padding: 6px 14px;
+            margin: 3px;
+            background-color: #72b890;
+            text-decoration: none;
+            font-size: 14px;
+            color: #fff;
+            border-radius: 2px;
+        }
+        .btn:hover {
+            opacity: 0.75;
+        }
+
+        .active {
+            opacity: 0.6;
+        }
+
+        .btns {
+            margin-top: 30px;
+        }
+
+        .footer {
+            margin-top: 30px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #72b890;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <h1>我的项目</h1>
+        <p>一句话项目介绍</p>
+        <div class="project">
+            <ul class="items">
+                <li><a class="btn active" href="#">项目1</a></li>
+                <li><a class="btn" href="#">项目2</a></li>
+                <li><a class="btn" href="#">项目3</a></li>
+                <li><a class="btn" href="#">项目4</a></li>
+                <li><a class="btn" href="#">项目5</a></li>
+            </ul>
+                <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/65d4aba2-a097-4b24-aaa0-ebbaf7eedab2" alt="">
+            <div class="btns">
+                <a class="btn" href="#">查看源码</a>
+                <a class="btn" href="#">使用说明</a>
+            </div>
+        </div>
+        <div class="footer">
+            作者: <a href="">我</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
