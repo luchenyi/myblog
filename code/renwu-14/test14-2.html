@@ -256,33 +256,37 @@
             content: '+';
             display: block;
         }
+
+        .clearfix {
+            content: '';
+            display: block;
+            clear: both;
+        }
     </style>
 </head>
 
 <body>
-    <div class="layout">
-        <div class="header">
-            <div class="name">
-                <div class="circle">
-                    <span class="f-name">T</span>
-                    <span class="line"></span>
-                    <span class="l-name">W</span>
-                </div>
-                <h1>Tu Wenbin</h1>
-                <p>Front End Engineer</p>
+    <div class="layout clearfix">
+        <div class="name">
+            <div class="circle">
+                <span class="f-name">T</span>
+                <span class="line"></span>
+                <span class="l-name">W</span>
             </div>
-
-            <div class="contacts">
-                <h2>CONTACTS</h2>
-                <ul class="message">
-                    <li class="address">江西省南昌市青山湖区</li>
-                    <li class="number">13583531156</li>
-                    <li class="email">949193531@qq.com</li>
-                    <li class="blog">https://github.com/weite122</li>
-                </ul>
-            </div>
+            <h1>Tu Wenbin</h1>
+            <p>Front End Engineer</p>
         </div>
-        <div class="experience">
+
+        <div class="contacts">
+            <h2>CONTACTS</h2>
+            <ul class="message">
+                <li class="address">江西省南昌市青山湖区</li>
+                <li class="number">13583531156</li>
+                <li class="email">949193531@qq.com</li>
+                <li class="blog">https://github.com/weite122</li>
+            </ul>
+        </div>
+        <div class="experience clearfix">
             <h3>WORK EXPERIENCE</h3>
             <div class="m-experience">
                 <h4>Marketplaces / <span>2011-2013</span></h4>
@@ -299,7 +303,7 @@
                     cum soluta nobis eleifend option congue nihil imperdiet id quod mazim placerat facer possim assum.</p>
             </div>
         </div>
-        <div class="education">
+        <div class="education clearfix">
             <h3>EDUCATION</h3>
             <div class="m-education">
                 <h4>College / <span>2011-2015</span></h4>
@@ -314,7 +318,7 @@
                     cum soluta nobis eleifend option congue nihil imperdiet id quod mazim placerat facer possim assum.</p>
             </div>
         </div>
-        <div class="activities">
+        <div class="activities clearfix">
             <div class="m-activities">
                 <h3>EXTRA CURRICULAR ACTIVITIES</h3>
                 <h4>Volunteer</h4>
@@ -323,7 +327,7 @@
                 <p>hdfergffgdfg sadf sdf sadf dsa asdfsdf sda fsdf asdf asggfds hdf dgh h fsd hdfergffgdfg </p>
             </div>
         </div>
-        <div class="skills">
+        <div class="skills clearfix">
             <h3>PROFESIONAL SKILLS</h3>
             <div class="skill-1">
                 <h4>HTML&CSS</h4>
