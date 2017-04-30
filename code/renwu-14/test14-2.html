@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>简历</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .layout {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .name {
+            width: 600px;
+            float: left;
+        }
+
+        .name h1 {
+            font-size: 42px;
+            font-weight: 300;
+            margin-bottom: 0px;
+        }
+
+        .name p {
+            margin-top: 0px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .circle {
+            position: relative;
+            float: left;
+            margin-right: 20px;
+            width: 140px;
+            height: 140px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+
+        .circle span {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .circle .f-name {
+            position: absolute;
+            left: 45px;
+            top: 40px;
+        }
+
+        .circle .l-name {
+            position: absolute;
+            right: 40px;
+            bottom: 30px;
+        }
+
+        .circle .line {
+            position: absolute;
+            left: 25px;
+            top: 70px;
+            width: 90px;
+            /*height: 0px;不写默认为0*/
+            border-bottom: 3px #fff solid;
+            transform: rotateZ(-45deg);
+        }
+
+        .contacts {
+            position: relative;
+            float: left;
+            width: 400px;
+            margin: 0;
+        }
+
+        .contacts h2:after {
+            content: '';
+            display: block;
+            width: 400px;
+            height: 5px;
+            background: #000;
+        }
+
+        .contacts h2 {
+            margin-bottom: 0;
+        }
+
+        .contacts .message {
+            padding-left: 0;
+        }
+
+        .contacts li {
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+        .address:before {
+            content: 'A';
+            display: block;
+            font-weight: 700;
+            float: left;
+            margin-right: 16px;
+        }
+
+        .number:before {
+            content: 'M';
+            display: block;
+            font-weight: 700;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .email:before {
+            content: 'E';
+            display: block;
+            font-weight: 700;
+            float: left;
+            margin-right: 18px;
+        }
+
+        .blog:before {
+            content: 'B';
+            display: block;
+            font-weight: 700;
+            float: left;
+            margin-right: 16px;
+        }
+
+        .experience,
+        .education {
+            position: relative;
+        }
+
+        .layout h3:after {
+            content: '';
+            display: block;
+            width: 400px;
+            height: 10px;
+            border-bottom: 1px #bbb solid;
+        }
+
+        .experience:after {
+            position: absolute;
+            left: -193px;
+            top: 475px;
+            content: '';
+            display: block;
+            width: 400px;
+            height: 1px;
+            border-bottom: 1px #000 solid;
+            transform: rotateZ(90deg);
+        }
+
+        .layout h4 {
+            font-weight: 400;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .experience h4:before,
+        .education h4:before {
+            position: absolute;
+            top: 6px;
+            left: -50px;
+            float: left;
+            content: '';
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #000;
+        }
+
+        .m-experience,
+        .m-education,
+        .m-activities,
+        .skill-1,
+        .skill-2 {
+            padding: 0 20px 0 50px;
+        }
+
+        .education h4 {
+            margin-bottom: 0;
+        }
+
+        .education:after {
+            position: absolute;
+            left: -143px;
+            top: 220px;
+            content: '';
+            display: block;
+            width: 300px;
+            height: 1px;
+            border-bottom: 1px #000 solid;
+            transform: rotateZ(90deg);
+        }
+
+        span {
+            font-size: 20px;
+            color: #999;
+        }
+
+        .activities,
+        .skills {
+            width: 500px;
+            float: left;
+            position: relative;
+        }
+
+        .skill-1,
+        .skill-2 {
+            width: 170px;
+            float: left;
+        }
+
+        .activities h4:before {
+            position: absolute;
+            left: -50px;
+            top: 3px;
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #000;
+        }
+
+        .activities h4:after {
+            position: absolute;
+            left: -46px;
+            top: -1px;
+            content: '+';
+            display: block;
+        }
+
+        .skills h4 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .skills h4:before {
+            position: absolute;
+            left: -50px;
+            top: 3px;
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #000;
+        }
+
+        .skills h4:after {
+            position: absolute;
+            left: -46px;
+            top: 1px;
+            content: '+';
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">
+            <div class="name">
+                <div class="circle">
+                    <span class="f-name">T</span>
+                    <span class="line"></span>
+                    <span class="l-name">W</span>
+                </div>
+                <h1>Tu Wenbin</h1>
+                <p>Front End Engineer</p>
+            </div>
+
+            <div class="contacts">
+                <h2>CONTACTS</h2>
+                <ul class="message">
+                    <li class="address">江西省南昌市青山湖区</li>
+                    <li class="number">13583531156</li>
+                    <li class="email">949193531@qq.com</li>
+                    <li class="blog">https://github.com/weite122</li>
+                </ul>
+            </div>
+        </div>
+        <div class="experience">
+            <h3>WORK EXPERIENCE</h3>
+            <div class="m-experience">
+                <h4>Marketplaces / <span>2011-2013</span></h4>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+                    possim assum.Typi non habent claritatem: insitam est uses legentis in iis qui facit.Nam liber tempor
+                    cum soluta nobis eleifend option congue nihil imperdiet id quod mazim placerat facer possim assum.</p>
+                <h4>Marketplaces / <span>2012-2013</span></h4>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+                    possim assum.Typi non habent claritatem: insitam est uses legentis in iis qui facit.Nam liber tempor
+                    cum soluta nobis eleifend option congue nihil imperdiet id quod mazim placerat facer possim assum.</p>
+                <h4>Marketplace / <span>2012-2013</span></h4>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+                    possim assum.Typi non habent claritatem: insitam est uses legentis in iis qui facit.Nam liber tempor
+                    cum soluta nobis eleifend option congue nihil imperdiet id quod mazim placerat facer possim assum.</p>
+            </div>
+        </div>
+        <div class="education">
+            <h3>EDUCATION</h3>
+            <div class="m-education">
+                <h4>College / <span>2011-2015</span></h4>
+                <span>Visual Design Communication</span>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+                    possim assum.Typi non habent claritatem: insitam est uses legentis in iis qui facit.Nam liber tempor
+                    cum soluta nobis eleifend option congue nihil imperdiet id quod mazim placerat facer possim assum.</p>
+                <h4>University / <span>2015-2017</span></h4>
+                <span>Visual Design Communication</span>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+                    possim assum.Typi non habent claritatem: insitam est uses legentis in iis qui facit.Nam liber tempor
+                    cum soluta nobis eleifend option congue nihil imperdiet id quod mazim placerat facer possim assum.</p>
+            </div>
+        </div>
+        <div class="activities">
+            <div class="m-activities">
+                <h3>EXTRA CURRICULAR ACTIVITIES</h3>
+                <h4>Volunteer</h4>
+                <p>hdfergffgdfg adf sdf sadf dsa asdfsdf sda fsdf asdf asggfds hdf dgh h fsd hdfergffgdfg </p>
+                <h4>Volunteer</h4>
+                <p>hdfergffgdfg sadf sdf sadf dsa asdfsdf sda fsdf asdf asggfds hdf dgh h fsd hdfergffgdfg </p>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>PROFESIONAL SKILLS</h3>
+            <div class="skill-1">
+                <h4>HTML&CSS</h4>
+                <h4>JAVASCRIPT</h4>
+                <h4>SLIM</h4>
+            </div>
+            <div class="skill-2">
+                <h4>JQUERY</h4>
+                <h4>PHOTOSHOP</h4>
+                <h4>ILLUSTRATOR</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
