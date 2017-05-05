@@ -144,11 +144,11 @@
         @font-face {
             font-family: 'iconfont';
             /* project id 292568 */
-            src: url('//at.alicdn.com/t/font_60naspvz5waeb3xr.eot');
-            src: url('//at.alicdn.com/t/font_60naspvz5waeb3xr.eot?#iefix') format('embedded-opentype'),
-            url('//at.alicdn.com/t/font_60naspvz5waeb3xr.woff') format('woff'),
-            url('//at.alicdn.com/t/font_60naspvz5waeb3xr.ttf') format('truetype'),
-            url('//at.alicdn.com/t/font_60naspvz5waeb3xr.svg#iconfont') format('svg');
+            src: url('//at.alicdn.com/t/font_sau1vumdndn29.eot');
+            src: url('//at.alicdn.com/t/font_sau1vumdndn29.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_sau1vumdndn29.woff') format('woff'),
+            url('//at.alicdn.com/t/font_sau1vumdndn29.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_sau1vumdndn29.svg#iconfont') format('svg');
         }
 
         .iconfont {
@@ -156,6 +156,9 @@
             font-style: normal;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+        }
+
+        .services-type .iconfont {
             font-size: 50px;
         }
 
@@ -246,6 +249,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            font-size: 50px;
         }
 
         .items img {
@@ -378,14 +382,6 @@
             line-height: 1.5;
         }
 
-        .team-part .iconfont {
-            font-size: 30px;
-            color: #333;
-        }
-
-        .team-part .iconfont:hover {
-            color: rgb(254, 209, 54);
-        }
 
         .team-icon {
             margin: 10px auto;
@@ -394,6 +390,7 @@
             flex-direction: row;
             justify-content: space-around;
             text-align: center;
+            height: 30px；
         }
 
         .banner {
@@ -481,14 +478,28 @@
             text-decoration: underline;
         }
 
-        #footer .iconfont {
-            color: #333;
-            height: 30px;
-            line-height: 30px;
+        #footer .icon,
+        .team-part .icon {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            border: 1px transparent solid;
+            border-radius: 50%;
+            background-color: #333;
         }
 
-        #footer .iconfont:hover {
-            color: rgb(254, 209, 54);
+        #footer .iconfont,
+        .team-part .iconfont {
+            display: block;
+            font-size: 20px;
+        }
+
+        #footer .icon:hover,
+        .team-part .icon:hover {
+            background-color: rgb(254, 209, 54);
         }
     </style>
 
@@ -667,9 +678,9 @@
                 <h4>Kay Garland</h4>
                 <p>Lead Designer</p>
                 <div class="team-icon">
-                    <a href="#header"><i class="iconfont">&#xe605</i></a>
-                    <a href="#header"><i class="iconfont">&#xe600</i></a>
-                    <a href="#header"><i class="iconfont">&#xe659</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe601</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe613</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe632</i></a>
                 </div>
 
             </li>
@@ -678,9 +689,9 @@
                 <h4>Kay Garland</h4>
                 <p>Lead Designer</p>
                 <div class="team-icon">
-                    <a href="#header"><i class="iconfont">&#xe605</i></a>
-                    <a href="#header"><i class="iconfont">&#xe600</i></a>
-                    <a href="#header"><i class="iconfont">&#xe659</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe601</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe613</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe632</i></a>
                 </div>
             </li>
             <li>
@@ -688,9 +699,9 @@
                 <h4>Kay Garland</h4>
                 <p>Lead Designer</p>
                 <div class="team-icon">
-                    <a href="#header"><i class="iconfont">&#xe605</i></a>
-                    <a href="#header"><i class="iconfont">&#xe600</i></a>
-                    <a href="#header"><i class="iconfont">&#xe659</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe601</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe613</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe632</i></a>
                 </div>
             </li>
         </ul>
@@ -737,9 +748,9 @@
         <ul>
             <li>Copyright &copy; Your Website 2014</li>
             <li>
-                <a href="#header"><i class="iconfont">&#xe605</i></a>
-                <a href="#header"><i class="iconfont">&#xe600</i></a>
-                <a href="#header"><i class="iconfont">&#xe659</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe601</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe613</i></a>
+                <a class="icon" href=""><i class="iconfont">&#xe632</i></a>
             </li>
             <li>
                 <a href="">Privacy Policy</a>
