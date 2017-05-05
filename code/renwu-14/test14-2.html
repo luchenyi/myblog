@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         .layout {
             width: 1000px;
             margin: 0 auto;
@@ -173,8 +177,7 @@
         .m-experience,
         .m-education,
         .m-activities,
-        .skill-1,
-        .skill-2 {
+        .m-skills {
             padding: 0 20px 0 50px;
             margin-bottom: 50px;
         }
@@ -204,50 +207,36 @@
         .skills {
             width: 500px;
             float: left;
+        }
+
+
+        .activities li {
             position: relative;
+            list-style: none;
         }
 
-        .skill-1,
-        .skill-2 {
-            width: 170px;
+
+        .skills>ul>li {
+            list-style: none;
+            margin-bottom: 20px;
+            width: 50%;
             float: left;
+            position: relative; /*伪元素的基准为li元素，不是ul*/
         }
-
-        .activities h4:before {
-            position: absolute;
-            left: -50px;
-            top: 3px;
-            content: '+';
-            display: block;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 1px solid #000;
-            text-align: center;
-            line-height: 18px;
-        }
-
-
-        .skills h4 {
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        .skills h4:before {
+        .activities li:before, 
+        .skills li:before {
             position: absolute;
             left: -50px;
             top: 0px;
             content: '+';
-            display: block;
+            display: inline-block;
             width: 20px;
             height: 20px;
             border-radius: 50%;
             border: 1px solid #000;
             text-align: center;
-            line-height: 18px;
-            font-weight: normal;
+            line-height: 20px; /*li元素的的垂直居中比h4的要好很多*/
         }
-
 
         .clearfix {
             content: '';
@@ -311,27 +300,25 @@
             </div>
         </div>
         <div class="activities">
-            <div class="m-activities">
-                <h3>EXTRA CURRICULAR ACTIVITIES</h3>
-                <h4>Volunteer</h4>
+            <h3>EXTRA CURRICULAR ACTIVITIES</h3>
+            <ul class="m-activities">
+                <li>Volunteer</li>
                 <p>hdfergffgdfg adf sdf sadf dsa asdfsdf sda fsdf asdf asggfds hdf dgh h fsd hdfergffgdfg </p>
-                <h4>Volunteer</h4>
+                <li>Volunteer</li>
                 <p>hdfergffgdfg sadf sdf sadf dsa asdfsdf sda fsdf asdf asggfds hdf dgh h fsd hdfergffgdfg </p>
-            </div>
+            </ul>
         </div>
         <div class="skills">
             <h3>PROFESIONAL SKILLS</h3>
-            <div class="skill-1">
-                <h4>HTML&CSS</h4>
-                <h4>JAVASCRIPT</h4>
-                <h4>SLIM</h4>
-            </div>
-            <div class="skill-2">
-                <h4>JQUERY</h4>
-                <h4>PHOTOSHOP</h4>
-                <h4>ILLUSTRATOR</h4>
-            </div>
-        </div>
+            <ul class="m-skills">
+                <li><strong>HTML&CSS</strong></li>
+                <li><strong>JAVASCRIPT</strong></li>
+                <li><strong>SLIM</strong></li>
+                <li><strong>JQUERY</strong></li>
+                <li><strong>PHOTOSHOP</strong></li>
+                <li><strong>ILLUSTRATOR</strong></li>
+        </ul>
+    </div>
     </div>
 </body>
 
